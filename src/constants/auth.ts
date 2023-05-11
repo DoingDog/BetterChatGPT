@@ -1,4 +1,4 @@
-export const officialAPIEndpoint = 'https://api-oai.iii.hair/v1/chat/completions';
+export const officialAPIEndpoint = 'https://api-oai.iii.hair/kamiya/v1/chat/completions';
 const customAPIEndpoint1 =
   import.meta.env.VITE_CUSTOM_API_ENDPOINT_1 || 'https://api-oai.iii.hair/churchless/v1/chat/completions';
 const customAPIEndpoint2 =
