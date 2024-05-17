@@ -19,26 +19,30 @@ Respond using Markdown.`;
 
 export const modelOptions: ModelOptions[] = [
   'gpt-3.5-turbo',
-  'gpt-3.5-turbo-16k',
-  'gpt-3.5-turbo-1106',
+  //'gpt-3.5-turbo-16k',
+  //'gpt-3.5-turbo-1106',
   'gpt-3.5-turbo-0125',
-  'gpt-4',
-  'gpt-4-32k',
-  'gpt-4-1106-preview',
+  //'gpt-4',
+  //'gpt-4-32k',
+  //'gpt-4-1106-preview',
   'gpt-4-0125-preview',
   'gpt-4-turbo',
-  'gpt-4-turbo-2024-04-09',
+  //'gpt-4-turbo-2024-04-09',
   'gpt-4o',
-  'gpt-4o-2024-05-13',
+  //'gpt-4o-2024-05-13',
   // 'gpt-3.5-turbo-0301',
   // 'gpt-4-0314',
   // 'gpt-4-32k-0314',
+  'claude-3-haiku',
+  'claude-3-sonnet',
+  'claude-3-opus',
+  'gemini-1.5-pro',
 ];
 
 export const defaultModel = 'gpt-3.5-turbo';
 
 export const modelMaxToken = {
-  'gpt-3.5-turbo': 4096,
+  'gpt-3.5-turbo': 8192,
   'gpt-3.5-turbo-0301': 4096,
   'gpt-3.5-turbo-0613': 4096,
   'gpt-3.5-turbo-16k': 16384,
@@ -57,6 +61,10 @@ export const modelMaxToken = {
   'gpt-4-turbo-2024-04-09': 128000,
   'gpt-4o': 128000,
   'gpt-4o-2024-05-13': 128000,
+  'claude-3-haiku': 200000,
+  'claude-3-sonnet': 200000,
+  'claude-3-opus': 200000,
+  'gemini-1.5-pro': 1000000,
 };
 
 export const modelCost = {
@@ -135,6 +143,22 @@ export const modelCost = {
   'gpt-4o-2024-05-13': {
     prompt: { price: 0.005, unit: 1000 },
     completion: { price: 0.015, unit: 1000 },
+  },
+  'claude-3-haiku': {
+    prompt: { price: 0.25, unit: 1000000 },
+    completion: { price: 1.25, unit: 1000000 },
+  },
+  'claude-3-sonnet': {
+    prompt: { price: 3, unit: 1000 },
+    completion: { price: 15, unit: 1000 },
+  },
+  'claude-3-opus': {
+    prompt: { price: 15, unit: 1000 },
+    completion: { price: 75, unit: 1000 },
+  },
+  'gemini-1.5-pro': {
+    prompt: { price: 3.5, unit: 1000000 },
+    completion: { price: 10.5, unit: 1000000 },
   },
 };
 
