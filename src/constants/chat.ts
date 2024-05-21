@@ -149,12 +149,12 @@ export const modelCost = {
     completion: { price: 1.25, unit: 1000000 },
   },
   'claude-3-sonnet': {
-    prompt: { price: 3, unit: 1000 },
-    completion: { price: 15, unit: 1000 },
+    prompt: { price: 3, unit: 1000000 },
+    completion: { price: 15, unit: 1000000 },
   },
   'claude-3-opus': {
-    prompt: { price: 15, unit: 1000 },
-    completion: { price: 75, unit: 1000 },
+    prompt: { price: 15, unit: 1000000 },
+    completion: { price: 75, unit: 1000000 },
   },
   'gemini-1.5-pro': {
     prompt: { price: 3.5, unit: 1000000 },
