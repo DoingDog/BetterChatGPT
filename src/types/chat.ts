@@ -65,7 +65,13 @@ export type ModelOptions =
   | 'claude-3-haiku'
   | 'claude-3-sonnet'
   | 'claude-3-opus'
-  | 'gemini-1.5-pro';
+  | 'gemini-1.5-pro'
+  //add claude-3-5-sonnet  command-r command-r-plus below
+  | 'claude-3-5-sonnet'
+  | 'command-r'
+  | 'command-r-plus';
+  
+  // | 'gpt-3.5-turbo-0125'
 // | 'gpt-3.5-turbo-0301';
 // | 'gpt-4-0314'
 // | 'gpt-4-32k-0314'

@@ -21,11 +21,11 @@ export const modelOptions: ModelOptions[] = [
   'gpt-3.5-turbo',
   //'gpt-3.5-turbo-16k',
   //'gpt-3.5-turbo-1106',
-  'gpt-3.5-turbo-0125',
+  //'gpt-3.5-turbo-0125',
   //'gpt-4',
   //'gpt-4-32k',
   //'gpt-4-1106-preview',
-  'gpt-4-0125-preview',
+  //'gpt-4-0125-preview',
   'gpt-4-turbo',
   //'gpt-4-turbo-2024-04-09',
   'gpt-4o',
@@ -36,7 +36,11 @@ export const modelOptions: ModelOptions[] = [
   'claude-3-haiku',
   'claude-3-sonnet',
   'claude-3-opus',
+  'claude-3-5-sonnet',
   'gemini-1.5-pro',
+  //add claude-3-5-sonnet  command-r command-r-plus below
+  'command-r',
+  'command-r-plus',
 ];
 
 export const defaultModel = 'gpt-3.5-turbo';
@@ -65,6 +69,10 @@ export const modelMaxToken = {
   'claude-3-sonnet': 200000,
   'claude-3-opus': 200000,
   'gemini-1.5-pro': 1000000,
+  //add claude-3-5-sonnet 200k command-r 128000 command-r-plus 128000 below
+  'claude-3-5-sonnet': 200000,
+  'command-r': 128000,
+  'command-r-plus': 128000,
 };
 
 export const modelCost = {
@@ -159,6 +167,19 @@ export const modelCost = {
   'gemini-1.5-pro': {
     prompt: { price: 3.5, unit: 1000000 },
     completion: { price: 10.5, unit: 1000000 },
+  },
+  //add claude-3-5-sonnet($3 per million input tokens and $15 per million output tokens)  command-r(Input$0.50/ 1M tokens Output$1.50/ 1M tokens) command-r-plus(Input$3.00/ 1M tokens Output$15.00/ 1M tokens) below
+  'claude-3-5-sonnet': {
+    prompt: { price: 3, unit: 1000000 },
+    completion: { price: 15, unit: 1000000 },
+  },
+  'command-r': {
+    prompt: { price: 0.5, unit: 1000000 },
+    completion: { price: 1.5, unit: 1000000 },
+  },
+  'command-r-plus': {
+    prompt: { price: 3, unit: 1000000 },
+    completion: { price: 15, unit: 1000000 },
   },
 };
 
